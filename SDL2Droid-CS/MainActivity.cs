@@ -13,8 +13,11 @@ namespace SDL2Droid_CS {
     )]
     public class MainActivity : SDLActivity {
 
+        public static MainActivity Instance { get; protected set; }
+
         public override void LoadLibraries() {
             base.LoadLibraries();
+            Instance = this;
             Bootstrap.SetupMain();
         }
 

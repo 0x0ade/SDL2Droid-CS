@@ -1,16 +1,16 @@
 # SDL2Droid-CS
 ### An opera in three parts: SDL2 + SDL2-CS + Xamarin.Android
-##### zlib-licensed
-##### clone recursively
+#### zlib-licensed
+#### clone recursively
 ----
 
-##### TL;DR:
+#### TL;DR:
 * Run `/SDL2Droid-CS-Native/buildnative.sh`
 * Compile `/SDL2Droid-CS-Java/` into `/SDL2Droid-CS-JBindings/Jars/SDL2Droid-CS-Java.jar`
 * Change `/SDL2Droid-CS/Bootstrap.cs`, `/SDL2Droid-CS/Resources/` and `/SDL2Droid-CS/MainActivity.cs`
 * Compile SDL2Droid-CS using Xamarin.Android (f.e. via Xamarin for Visual Studio).
 
-##### /SDL2Droid-CS-Native/
+#### /SDL2Droid-CS-Native/
 
 *What:* SDL2 `Android.mk` makefile and "wrapper" code (SDL_main returning to C# managed land)
 
@@ -18,7 +18,7 @@
 
 *Compilation:* Run `buildnative.sh` (cygwin-compatible) from inside SDL2Droid-CS-Native. That's it.
 
-##### /SDL2Droid-CS-Java/
+#### /SDL2Droid-CS-Java/
 
 *What:* Original SDL2 SDLActivity.java interoperating with native SDL2 code
 
@@ -26,7 +26,7 @@
 
 *Compilation:* In your favourite Java IDE, produce a compiled .jar artifact and place it into `/SDL2Droid-CS-JBindings/Jars/`
 
-##### /SDL2Droid-CS/ and /SDL2Droid-CS-JBindings/
+#### /SDL2Droid-CS/ and /SDL2Droid-CS-JBindings/
 
 *What:* The Mono side of things: Main C# code and SDLActivity bindings.
 
