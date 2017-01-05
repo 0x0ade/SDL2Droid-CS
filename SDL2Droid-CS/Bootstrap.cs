@@ -33,6 +33,12 @@ namespace SDL2Droid_CS {
         public static void SDL_Main() {
             // Example code.
 
+            // OPTIONAL: Hide action bar (top bar). Otherwise it just shows the window title.
+            // MainActivity.Instance.RunOnUiThread(MainActivity.Instance.ActionBar.Hide);
+
+            // OPTIONAL: Fullscreen (immersive), handled by the activity
+            MainActivity.SDL2DCS_Fullscreen = true;
+
             SDL.SDL_Init(
                 SDL.SDL_INIT_VIDEO |
                 SDL.SDL_INIT_JOYSTICK |
@@ -42,7 +48,7 @@ namespace SDL2Droid_CS {
 
             // OPTIONAL: Get WM. Required to set the backbuffer size to the screen size
             DisplayMetrics dm = new DisplayMetrics();
-            MainActivity.Instance.WindowManager.DefaultDisplay.GetMetrics(dm);
+            MainActivity.SDL2DCS_Instance.WindowManager.DefaultDisplay.GetMetrics(dm);
 
             IntPtr window = SDL.SDL_CreateWindow(
                 "HEY, LISTEN!",
