@@ -1,0 +1,12 @@
+[submodule "SDL2-CS"]
+	path = SDL2-CS
+	url = https://github.com/flibitijibibo/SDL2-CS.git
+[submodule "SDL-mirror"]
+	path = SDL-mirror
+	url = https://github.com/FNA-XNA/SDL-mirror.git
+[submodule "deps/SDL2-CS"]
+	path = deps/SDL2-CS
+	url = https://github.com/flibitijibibo/SDL2-CS.git
+[submodule "deps/SDL"]
+	path = deps/SDL
+	url = https://github.com/FNA-XNA/SDL-mirror.git
