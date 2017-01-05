@@ -14,15 +14,15 @@
 
 *What:* SDL2 `Android.mk` makefile and "wrapper" code (SDL_main returning to C# managed land)
 
-*Why:* Xamarin for Visual Studio has got some problems with native libraries.
+*Why:* Xamarin for Visual Studio has got some problems with compiling native libraries on its own.
 
-*Compilation:* Run `buildnative.sh` (cygwin-compatible) from inside SDL2Droid-CS-Native. That's it.
+*Compilation:* Run `buildnative.sh` (cygwin-compatible) from inside `/SDL2Droid-CS-Native/`. That's it.
 
 #### /SDL2Droid-CS-Java/
 
-*What:* Original SDL2 SDLActivity.java interoperating with native SDL2 code
+*What:* Original SDL2 `SDLActivity.java` interoperating with native SDL2 code
 
-*Why:* SDL2's native side is prepared for the JNI bindings in SDLActivity.java - let's just reuse them!
+*Why:* SDL2's native side is prepared for the JNI bindings in `SDLActivity.java` - let's just reuse them!
 
 *Compilation:* In your favourite Java IDE, produce a compiled .jar artifact and place it into `/SDL2Droid-CS-JBindings/Jars/`
 
