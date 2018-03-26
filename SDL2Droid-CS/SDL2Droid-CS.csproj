@@ -53,9 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\deps\SDL2-CS\src\LPUtf8StrMarshaler.cs">
-      <Link>SDL2-CS\LPUtf8StrMarshaler.cs</Link>
-    </Compile>
     <Compile Include="..\deps\SDL2-CS\src\SDL2.cs">
       <Link>SDL2-CS\SDL2.cs</Link>
     </Compile>
