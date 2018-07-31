@@ -9,4 +9,4 @@
 	url = https://github.com/flibitijibibo/SDL2-CS.git
 [submodule "deps/SDL"]
 	path = deps/SDL
-	url = https://github.com/spurious/SDL-mirror.git
+	url = https://github.com/0x0ade/SDL.git
